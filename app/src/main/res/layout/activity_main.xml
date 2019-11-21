@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:scaleType="fitXY"
+        android:textAlignment="center"
+        android:src="@drawable/header"
+        />
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="LOGIN"
+        android:textSize="25dp" />
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_person"
+        android:hint="User Name"
+        android:textStyle="italic"
+        android:textSize="15dp"/>
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"/>
+
+<Button
+    android:id="@+id/btnlogin"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="Login"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:textSize="25dp"/>
+
+    <ImageView
+        android:id="@+id/imgviewtwo"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_below="@+id/txtview"
+        android:contentDescription="footer"
+        android:scaleType="fitXY"
+        android:src="@drawable/footer" />
+
+</LinearLayout>
